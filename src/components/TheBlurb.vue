@@ -1,8 +1,8 @@
 <template>
   <div>
     <select v-model="selectedModality">
-      <option value="online">Online</option>
       <option value="onCampus">On-Campus</option>
+      <option value="online">Online</option>
     </select>
 
     <select v-model="selectedCredential">
@@ -14,7 +14,7 @@
       <option value="msCounseling">MS Counseling</option>
     </select>
 
-    <div v-if="tuitionBlurb">
+    <div v-if="tuitionBlurb" class="tiger-text">
       <p v-html="tuitionBlurb"></p>
       <p v-html="footnote"></p>
     </div>
@@ -27,7 +27,7 @@ import { tuitionBlurbs } from '../assets/replaceData.js';
 export default {
   data() {
     return {
-      selectedModality: 'online',
+      selectedModality: 'onCampus',
       selectedCredential: 'undergrad',
       tuitionBlurb: '',
       footnote: ''

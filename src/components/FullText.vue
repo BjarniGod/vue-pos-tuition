@@ -1,15 +1,15 @@
 <template>
     <div>
       <select v-model="selectedModality">
-        <option value="online">Online</option>
         <option value="onCampus">On-Campus</option>
+        <option value="online">Online</option>
       </select>
   
       <select v-model="selectedCredential">
         <option v-for="(credential, key) in availableCredentials" :key="key" :value="key">{{ credential.title }}</option>
       </select>
   
-      <div v-if="tuitionBlurb">
+      <div  v-if="tuitionBlurb" class="tiger-text">
         <p v-html="tuitionBlurb"></p>
         <p v-html="footnote"></p>
       </div>
@@ -22,7 +22,7 @@
   export default {
     data() {
       return {
-        selectedModality: 'online',
+        selectedModality: 'onCampus',
         selectedCredential: 'undergrad',
         tuitionBlurb: '',
         footnote: ''

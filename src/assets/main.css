@@ -1,83 +1,42 @@
-/* Tiger Style CSS */
-
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #FFA726; /* Light orange background */
-  color: black; /* Black text color */
+  background-color: white;
+  color: black;
 }
 
-/* Styling for dropdowns */
 select {
-  background-color: #FFF3E0; /* Light orange background for dropdown */
-  border: 2px solid black; /* Black border */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ffaf06;
   padding: 5px 10px;
-  margin: 10px 0;
+  margin: 10px 30px;
+  width: 200px;
   cursor: pointer;
 }
 
-/* Option styling (works in some browsers) */
-option {
-  background-color: white; /* White background for options */
-  color: black; /* Black text for options */
-}
-
-/* Subtle Tiger Stripes */
-.tiger-stripes {
-  background-image: repeating-linear-gradient(
-      45deg,
-      #FFA726, /* Lighter orange for base color */
-      #FFA726 10px,
-      #F57C00 10px, /* Slightly darker orange for stripe */
-      #F57C00 20px
-  ); /* Adjusted width and color for subtlety */
-  color: black; /* Black text on subtle stripes */
-  padding: 20px;
-  margin: 10px 0;
-}
-
-
-/* Tiger-themed button */
-.tiger-button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tiger-button:hover {
-  background-color: #E65100; /* Dark orange on hover */
-}
-
-/* Tiger border for content */
 .tiger-border {
-  border: 3px solid black;
+  border: 3px solid #ffaf06;
   padding: 10px;
   margin: 10px 0;
 }
 
-/* Headline styling */
 .tiger-headline {
+  background-color: #ffaf06;
+  color: white;
+  border: 2px solid black;
   font-size: 24px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-align: center;
+  padding: 1px;
   margin-bottom: 10px;
 }
 
-/* Paragraph styling */
-p {
-  background-color: #FFF3E0; /* Light orange background */
-  border: 1px solid black; /* Black border */
-  padding: 10px;
-  margin: 10px 0;
+.tiger-text {
+  border: 1px solid #ffaf06;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px 30px 10px 30px;
 }
 
-/* Responsive design adjustments */
-@media (max-width: 600px) {
-  .tiger-stripes {
-      background-size: 20px 20px;
-  }
-}
+
