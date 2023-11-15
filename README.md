@@ -1,6 +1,4 @@
-# vue-pos-tuition
-
-This template should help get you started developing with Vue 3 in Vite.
+# Program of Study - Tuition
 
 ## Recommended IDE Setup
 
