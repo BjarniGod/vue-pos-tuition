@@ -1,4 +1,3 @@
-Create two new VUE components, one for the select options, and then one for the 'tiger-class' div. This file is called TuitionSelect.vue. Use the imported asset in here and pass it down the new new components to use.
 <template>
     <div>
       <select v-model="selectedModality">
