@@ -1,5 +1,4 @@
 import './assets/main.css'
-// import './assets/data.js'
 
 import { createApp } from 'vue'
 import App from './App.vue'

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Undergraduate",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Students in this program can expect to pay approximately $2,817.00* (on-campus) per semester.",
+    "note": "*Estimated cost based on 15 credit hours at the undergraduate resident/regional tuition rate ($187.80/credit hour) for on-campus courses. Actual price may vary depending on course load and location. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  },
+  {
+    "title": "Graduate",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Students in this program can expect to pay approximately $2,348.64* (on-campus) per semester.",
+    "note": "*Estimated cost based on 9 credit hours at the graduate resident/regional tuition rate ($260.96/credit hour) for on-campus courses. Actual price may vary depending on course load and location. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  },
+  {
+    "title": "MBA",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Graduates in this program can expect to pay approximately $11,336.64* (on-campus) during their time as a student.",
+    "note": "*Estimated cost based on 24 credit hours (core requirements) at the MBA tuition rate ($374.50/credit hour); and the graduate resident/regional tuition rate ($260.96/credit hour) for on-campus courses, or the FHSU Online graduate tuition rate ($319.45/credit hour) for online courses. Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  },
+  {
+    "title": "MLS",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Graduates in this program can expect to pay approximately $8,089.76* (on-campus) during their time as a student.",
+    "note": "*Estimated cost based on 31 credit hours required to complete the program at the graduate resident/regional tuition rate ($260.96/credit hour) for on-campus courses. Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  },
+  {
+    "title": "MPS",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Graduates in this program can expect to pay approximately $7,828.80* (on-campus) during their time as a student.",
+    "note": "*Estimated cost based on 30 credit hours required to complete the program at the graduate resident/regional tuition rate ($260.96/credit hour) for on-campus courses. Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  },
+  {
+    "title": "RN to DNP",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Graduates in this program can expect to pay approximately $30,000* during their time as a student.",
+    "note": "*Estimated cost based on 75 credit hours required to complete the program at the DNP tuition rate ($428/credit hour). Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  },
+  {
+    "title": "MSN to DNP",
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Graduates in this program can expect to pay approximately $13,200* during their time as a student.",
+    "note": "*Estimated cost based on 33 credit hours required to complete the program at the DNP tuition rate ($428/credit hour). Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  }
+]
