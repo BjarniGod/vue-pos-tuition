@@ -1,0 +1,6 @@
+[
+  {
+    "description": "Fort Hays State University prides itself on quality education at an affordable price. Graduates in this program can expect to pay approximately <strong>$${tuitionCost}* (${location})</strong> during their time as a student.",
+    "footnote": "*Estimated cost based on ${creditHours} credit hours required to complete the program at the FHSU Online graduate tuition rate ($${pricePerHour}/credit hour) for online courses. Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
+  }
+]
