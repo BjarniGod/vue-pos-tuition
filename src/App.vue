@@ -3,18 +3,23 @@
     <div>
       <TheHeader class="tiger-headline" title="Tuition" />
       <TheData />
+      <TheCalculator />
     </div>
   </main>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue';
+// import TheBlurb from './components/TheBlurb.vue';
 import TheData from './components/TuitionSelect.vue';
+import TheCalculator from './components/TheCalculator.vue';
 
 export default {
     components: {
         TheHeader,
-        TheData
+        // TheBlurb,
+        TheData,
+        TheCalculator
     },
 }
 </script>
