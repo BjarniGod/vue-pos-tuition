@@ -1,4 +1,4 @@
-export const tuitionBlurbs2 = {
+export const tuitionBlurbs = {
     online: {
       undergrad: {
         title: "Undergraduate",

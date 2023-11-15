@@ -1,3 +1,4 @@
+Create two new VUE components, one for the select options, and then one for the 'tiger-class' div. This file is called TuitionSelect.vue. Use the imported asset in here and pass it down the new new components to use.
 <template>
     <div>
       <select v-model="selectedModality">
@@ -17,7 +18,7 @@
   </template>
   
   <script>
-  import { tuitionBlurbs2 } from '../assets/fullText.js';
+  import { tuitionBlurbs } from '../assets/TheData.js';
   
   export default {
     data() {
@@ -30,7 +31,7 @@
     },
     computed: {
       availableCredentials() {
-        const modalityPrograms = tuitionBlurbs2[this.selectedModality];
+        const modalityPrograms = tuitionBlurbs[this.selectedModality];
         return Object.keys(modalityPrograms).reduce((acc, key) => {
           acc[key] = { title: modalityPrograms[key].title };
           return acc;
@@ -46,7 +47,7 @@
     },
     methods: {
       updateBlurb() {
-        const programData = tuitionBlurbs2[this.selectedModality][this.selectedCredential];
+        const programData = tuitionBlurbs[this.selectedModality][this.selectedCredential];
         if (programData) {
           this.tuitionBlurb = programData.description;
           this.footnote = programData.note;
