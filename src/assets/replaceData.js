@@ -14,5 +14,8 @@ export const tuitionBlurbs = {
       mba: ['MBA', 11336.64, 24],
       mls: ['MLS', 8089.76, 31],
       mps: ['MPS', 7828.80, 30],
+    },
+    hybrid: {
+      
     }
 }

@@ -29,6 +29,16 @@ select {
   cursor: pointer;
 }
 
+input {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid var(--secondary);
+  padding: 5px 10px;
+  margin: 10px 30px;
+  width: 200px;
+  cursor: pointer;
+}
+
 /* .tiger-border {
   border: 3px solid var(--gold);
   padding: 10px;
