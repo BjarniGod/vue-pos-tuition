@@ -1,56 +1,50 @@
 <template>
   <div>
-    <select v-model="selectedModality">
-      <option value="onCampus">On-Campus</option>
-      <option value="online">Online</option>
-    </select>
-
     <select v-model="selectedCredential">
-      <option value="undergrad">Undergrad</option>
-      <option value="grad">Grad</option>
+      <option value="undergrad">Undergraduate</option>
+      <option value="grad">Graduate</option>
       <option value="mba">MBA</option>
       <option value="mls">MLS</option>
       <option value="mps">MPS</option>
       <option value="msCounseling">MS Counseling</option>
     </select>
 
-    <div v-if="tuitionBlurb" class="tiger-text">
-      <p v-html="tuitionBlurb"></p>
-      <p v-html="footnote"></p>
-    </div>
+    <select v-model="selectedMode">
+      <option value="onCampus">On-Campus</option>
+      <option value="online">Online</option>
+    </select>
+
+    <div v-html="currentDescription"></div>
+    <div v-html="currentFootnote"></div>
   </div>
 </template>
 
 <script>
-import { tuitionBlurbs } from '../assets/replaceData.js';
+import { tuitionBlurbs } from '../assets/replaceData';
 
 export default {
+  props: {
+    GraduateText: Array,
+    UndergraduateText: Array
+  },
   data() {
     return {
-      selectedModality: 'onCampus',
+      selectedMode: 'onCampus',
       selectedCredential: 'undergrad',
-      tuitionBlurb: '',
-      footnote: ''
-    };
-  },
-  watch: {
-    selectedModality: 'updateBlurb',
-    selectedCredential: 'updateBlurb'
-  },
-  methods: {
-    updateBlurb() {
-      const [price, creditHours] = tuitionBlurbs[this.selectedModality][this.selectedCredential];
-      const textTemplate = tuitionBlurbs[`${this.selectedModality}Text`].text;
-      const footnoteTemplate = tuitionBlurbs[`${this.selectedModality}Text`].footnote;
-
-      this.tuitionBlurb = textTemplate.replace('${tuitionRate}', `$${price.toFixed(2)}`);
-      this.footnote = footnoteTemplate.replace('${creditHours}', creditHours)
-                                       .replace('${pricePerCreditHour}', `$${(price / creditHours).toFixed(2)}`);
+      tuitionInfo: tuitionBlurbs
     }
   },
-  mounted() {
-    this.updateBlurb();
-  }
-};
-
+  computed: {
+    currentDescription() {
+      const info = this.tuitionInfo[this.selectedMode][this.selectedCredential];
+      const descriptionTemplate = this.GraduateText[0].description;
+      return descriptionTemplate.replace('${tuitionCost}', info[1]).replace('${location}', info[0]);
+    },
+    currentFootnote() {
+      const info = this.tuitionInfo[this.selectedMode][this.selectedCredential];
+      const footnoteTemplate = this.GraduateText[0].footnote;
+      return footnoteTemplate.replace('${creditHours}', info[2]).replace('${pricePerHour}',);
+    }
+  },
+}
 </script>
