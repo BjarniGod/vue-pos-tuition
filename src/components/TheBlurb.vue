@@ -21,14 +21,14 @@
 </template>
 
 <script>
-import { tuitionInfo } from '../assets/replaceData';
+import { tuitionInfo } from '../assets/replaceData.js';
 import TheCalculator from './TheCalculator.vue';
 import { dollarAmount } from '../filters.js';
 
+
 export default {
   props: {
-    GraduateText: Array,
-    UndergraduateText: Array
+    TheBlurbs: Array
   },
   components: {
     TheCalculator
@@ -79,14 +79,17 @@ export default {
     currentDescription() {
       const info = this.currentProgramInfo;
       if (!info) return 'Information not available';
-      const template = this.selectedCredential === 'undergrad' ? this.UndergraduateText[0].description : this.GraduateText[0].description;
+      const credentialType = this.selectedCredential === 'undergrad' ? 'undergraduate' : 'graduate';
+      const template = this.TheBlurbs[0].description[credentialType];
       return template.replace('${tuitionCost}', dollarAmount(info.price)).replace('${location}', this.formatLocation(this.selectedMode));
     },
     currentFootnote() {
       const info = this.currentProgramInfo;
       if (!info) return 'Information not available';
-      const template = this.selectedCredential === 'undergrad' ? this.UndergraduateText[0].footnote : this.GraduateText[0].footnote;
-      return template.replace('${creditHours}', info.creditHours).replace('${pricePerHour}', dollarAmount(this.pricePerHour));
+      const mode = this.selectedMode;
+      const footnoteType = mode === 'onCampus' ? 'onCampus' : 'online';
+      const template = this.TheBlurbs[0].footnote[footnoteType];
+      return template.replace('${creditHours}', info.creditHours).replace('${undergrad/grad}', info.title === 'Undergrad' ? 'undergraduate' : 'graduate').replace('${pricePerHour}', dollarAmount(this.pricePerHour));
     }
   },
   methods: {
