@@ -55,7 +55,7 @@ export default {
       return program.availability;
     },
     showModeSelector() {
-      return this.availableModes.length > 0;
+      return this.availableModes.length > 0 && this.selectedMode !== 'hybrid';
     },
     modeDisabled() {
       return this.availableModes.length === 1;
@@ -81,7 +81,7 @@ export default {
       if (!info) return 'Information not available';
       const credentialType = this.selectedCredential === 'undergrad' ? 'undergraduate' : 'graduate';
       const template = this.TheBlurbs[0].description[credentialType];
-      return template.replace('${tuitionCost}', dollarAmount(info.price)).replace('${location}', this.formatLocation(this.selectedMode));
+      return template.replace('${tuitionCost}', dollarAmount(info.price)).replace('${location}', this.selectedMode === 'hybrid' ? '' : this.formatLocation(this.selectedMode));
     },
     currentFootnote() {
       const info = this.currentProgramInfo;
