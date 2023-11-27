@@ -1,10 +1,3 @@
-// on campus:
-// *Estimated cost based on 30 credit hours required to complete the program at the graduate resident/regional tuition rate ($260.96/credit hour) for on-campus courses. Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents.
-
-// online:
-// *Estimated cost based on 30 credit hours required to complete the program at the FHSU Online graduate tuition rate ($319.45/credit hour) for online courses. Actual price may vary. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents.
-
-
 export const tuitionInfo = {
   programs: {
     undergrad: {

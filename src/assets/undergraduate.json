@@ -1,6 +1,0 @@
-[
-  {
-    "description": "Fort Hays State University prides itself on quality education at an affordable price. Students in this program can expect to pay approximately <strong>${tuitionCost}* (${location})</strong> per semester.",
-    "footnote": "*Estimated cost based on ${creditHours} credit hours at the FHSU Online undergraduate tuition rate (${pricePerHour}/credit hour) for online courses. Actual price may vary depending on course load and location. Tuition and Fees are subject to change with annual approval by the Kansas Board of Regents."
-  }
-]
